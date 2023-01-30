@@ -1,0 +1,14 @@
+<div id="navigation" class="col three">
+<ul>
+foreach $root do
+  <li><em>@title</em></li>
+  foreach $children do
+  <li>
+  	<a href="@url">@title</a>
+  </li>
+  endforeach
+endforeach
+<br><em>@index / @siblings_count</em>
+</ul>
+
+</div>

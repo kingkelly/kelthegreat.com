@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+var titles = new Array(
+    'Brain Surgeon',
+    'National Treasure',
+    'Holy Water',
+    'Billionaire');
+
+var title = titles[parseInt(Math.random() * titles.length)];
+document.write('<title>Artist / Designer / ' +title+ '</title>');
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("img.a").hover(function() {
+      $(this).stop().animate({opacity: ".8"}, 'fast');
+    },
+    function() {
+      $(this).stop().animate({opacity: "1"}, 'fast');
+    });
+  });
+</script>
+
+<link type="text/css" rel="stylesheet" href="css/jquery.galleryview-3.0-dev.css" />
+</head>
+<body>
+
+	<div id="master">
+		<br><br><br><br><br>
+		<div id="name"><a href="index.html" ><img src="myname.jpg" class="a" alt="Back" /></a></div>	
+		<div id="finger">
+			<img src="animatedgif2.gif" />
+		</div>
+		<div id="contact">
+			KellyKeenan@gmail.com<br>
+			Made in Canada.<br><br>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

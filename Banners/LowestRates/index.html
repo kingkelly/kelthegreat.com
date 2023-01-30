@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta charset="utf-8" />
+	<title>Evans Hunt - Lowest Rates Banners</title>
+	<link rel="stylesheet" href="bananas.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="side">
+	<div class="sidetop">
+		<div class="avatar">
+		</div>
+
+		<div class="client">
+		Evans Hunt
+		</div>
+
+		<div class="date">
+			Lowest Rates
+			<!-- <script language="javascript"> 
+			months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+			var theDate = new Date(document.lastModified); 
+			theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+			with (theDate) { 
+			document.write(months[getMonth()]+' '+getDate()) 
+			} 
+			</script>  -->
+		</div>
+
+		<div class="back">
+		<
+		</div>
+	</div>
+
+	<div class="sidelist">
+		
+ 		<!-- <div class="campaign">Campaign Title</div> -->
+
+		<div class="title">
+			General
+		</div>
+
+		<ul>
+			<li><a href="300x250_rates_gen/300x250_rates_gen.html" target="con" class="active">300x250</a></li>
+			<li><a href="300x600_gen/300x600_gen.html" target="con" >300x600</a></li>
+			<li><a href="728x90_gen/728x90_gen.html" target="con" >728x90</a></li>
+		</ul>
+
+
+
+		<div class="title">
+			Credit
+		</div>
+
+		<ul>
+			<li><a href="300x250_cre/300x250_cre.html" target="con">300x250</a></li>
+			<li><a href="300x600_cre/300x600_cre.html" target="con" >300x600</a></li>
+			<li><a href="728x90_cre/728x90_cre.html" target="con" >728x90</a></li>	
+		</ul>
+
+	</div>
+</div>
+
+<div class="content">
+	<iframe name="con" src="300x250_rates_gen/300x250_rates_gen.html" id="con" frameBorder="0"></iframe>
+</div>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".back").on("click", function() {
+        $(".side").toggleClass("hide");
+        $(".content").toggleClass("expand");
+        $(".back").toggleClass("flip");
+    });
+}); 
+</script>
+
+<script type="text/javascript">
+	$('a').click(function(){
+    if ( $('a').hasClass('active') ) {
+        $('a').removeClass('active')
+    } 
+    if ( $(this).hasClass('') ) {
+        $(this).addClass('active')
+    } }) 
+</script>
+
+</body>
+</html>

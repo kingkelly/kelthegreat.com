@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+var titles = new Array(
+    'Brain Surgeon',
+    'National Treasure',
+    'Holy Water',
+    'Billionaire');
+
+var title = titles[parseInt(Math.random() * titles.length)];
+document.write('<title>Artist / Designer / ' +title+ '</title>');
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10861701-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- First, add jQuery (and jQuery UI if using custom easing or animation -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+<!-- Second, add the Timer and Easing plugins -->
+<script type="text/javascript" src="js/jquery.timers-1.2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!-- Third, add the GalleryView Javascript and CSS files -->
+<script type="text/javascript" src="js/jquery.galleryview-3.0-dev.js"></script>
+<link type="text/css" rel="stylesheet" href="css/jquery.galleryview-3.0-dev.css" />
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a").hover(function() {
+      $(this).stop().animate({opacity: ".8"}, 'slow');
+    },
+    function() {
+      $(this).stop().animate({opacity: "1"}, 'slow');
+    });
+  });
+</script>
+
+
+<!-- Lastly, call the galleryView() function on your unordered list(s) -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book1').galleryView({
+      transition_speed: 700,
+     panel_width: 1000,
+     panel_height: 500,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 154,
+     frame_height: 77,
+     frame_opacity: 0.7,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book2').galleryView({
+      transition_speed: 700,
+     panel_width: 1000,
+     panel_height: 615,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 154,
+     frame_height: 77,
+     frame_opacity: 0.8,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book3').galleryView({
+      transition_speed: 700,
+     panel_width: 1000,
+     panel_height: 615,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 187,
+     frame_height: 87,
+     frame_opacity: 0.8,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book4').galleryView({
+      transition_speed: 700,
+     panel_width: 1000,
+     panel_height: 615,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 187,
+     frame_height: 87,
+     frame_opacity: 0.8,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book5').galleryView({
+      transition_speed: 700,
+     panel_width: 1000,
+     panel_height: 615,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 187,
+     frame_height: 87,
+     frame_opacity: 0.8,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#book6').galleryView({
+      transition_speed: 700,
+     panel_width: 700,
+     panel_height: 700,
+     panel_animation: 'crossfade',
+     show_filmstrip_nav: false,
+     enable_slideshow: false,
+     filmstrip_style: 'showall',
+     frame_width: 162,
+     frame_height: 100,
+     frame_opacity: 0.8,
+     frame_gap: 12.6,
+     show_infobar: false,
+    });
+  });
+</script>
+
+
+</head>
+<body>
+
+	<div id="master">
+		<br><br><br><br><br>
+		<div id="name"><a href="contactme.html" ><img src="myname.jpg" class="a" alt="Contact" /></a></div>	
+		<div id="titler">"Outdoor Art Class"</div>
+		
+		<ul id="book1">
+		<li><img src="gold/police1_fin.jpg" />
+		<li><img src="gold/police_fin.jpg" />
+		<li><img src="gold/police2_fin.jpg" />
+		<li><img src="gold/pussy_fin.jpg" />
+		<li><img src="gold/subway_fin.jpg" />
+		<li><img src="gold/subway2_fin.jpg" />
+		<li><img src="gold/subway3_fin.jpg" />
+		<li><img src="gold/subway4_fin.jpg" />
+		<li><img src="gold/kid1_fin.jpg" />
+		<li><img src="gold/pussy2_fin.jpg" />
+		<li><img src="gold/cholo_fin.jpg" />
+		<li><img src="gold/cholo2_fin.jpg" />
+		<li><img src="gold/billboard1_fin.jpg" />
+		<li><img src="gold/billboard2_fin.jpg" />
+		<li><img src="gold/cover1_fin.jpg" />
+		<li><img src="gold/cover2_fin.jpg" />
+		</ul>
+		
+		<br><br><br><br><br><br><br><br><br>
+		
+		
+		<div id="titler">"Magic & Poetry"</div>
+		
+		<ul id="book2">
+		<li><img src="gold/4.jpg" />
+		<li><img src="gold/1.jpg" />
+		<li><img src="gold/2.jpg" />
+		<li><img src="gold/3.jpg" />
+		<li><img src="gold/7.jpg" />
+		<li><img src="gold/8.jpg" />
+		<li><img src="gold/9.jpg" />
+		<li><img src="gold/10.jpg" />
+		</ul>	
+		
+	<br><br><br><br><br><br><br><br><br>
+	
+		<div id="titler">"Delusions of Illusions"</div>
+		
+		<ul id="book4">
+		<li><img src="gold/ill1.jpg" />
+		<li><img src="gold/ill2.jpg" />
+		<li><img src="gold/ill3.jpg" />
+		<li><img src="gold/ill4.jpg" />
+		<li><img src="gold/ill5.jpg" />
+		</ul>	
+		
+		<br><br><br><br><br><br><br><br><br>
+		
+		<div id="titler">"Beep Beep"</div>
+		
+		<ul id="book3">
+		<li><img src="gold/beep1.jpg" />
+		<li><img src="gold/beep2.jpg" />
+		<li><img src="gold/beep3.jpg" />
+		<li><img src="gold/beep4.jpg" />
+		<li><img src="gold/beep5.jpg" />
+		</ul>
+		
+		<br><br><br><br><br><br><br><br><br>
+		
+		<div id="titler">"History of Air"</div>
+		
+		<ul id="book5">
+		<li><img src="gold/hoa3.jpg" />
+		<li><img src="gold/hoa4.jpg" />
+		<li><img src="gold/hoa1.jpg" />
+		<li><img src="gold/hoa2.jpg" />
+		<li><img src="gold/hoa5.jpg" />
+		</ul>	
+		
+		<!-- <br><br><br><br><br><br><br><br><br>
+		
+		<div id="titler">"Megazines"</div>
+		
+		<center><ul id="book6">
+		<li><img src="gold/mega5.jpg" />
+		<li><img src="gold/mega2.jpg" />
+		<li><img src="gold/mega7.jpg" />
+		<li><img src="gold/mega3.jpg" />
+		<li><img src="gold/mega6.jpg" />
+		<li><img src="gold/mega4.jpg" />
+		<li><img src="gold/mega1.jpg" />
+		</ul>	</center>	  -->
+	
+	
+	
+	
+	</div>
+	
+	<div id="footy">Made in Canada. <a href="contactme.html" class="a">Contact</a></div>
+</body>
+</html>
+

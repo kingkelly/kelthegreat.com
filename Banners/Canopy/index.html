@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta charset="utf-8" />
+	<title>Sister Merci - Canopy Banners</title>
+	<link rel="stylesheet" href="bananas.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="side">
+	<div class="sidetop">
+		<div class="avatar">
+		</div>
+
+		<div class="client">
+		Sister Merci
+		</div>
+
+		<div class="date">
+			Canopy
+			<!-- <script language="javascript"> 
+			months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+			var theDate = new Date(document.lastModified); 
+			theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+			with (theDate) { 
+			document.write(months[getMonth()]+' '+getDate()) 
+			} 
+			</script>  -->
+		</div>
+
+		<div class="back">
+		<
+		</div>
+	</div>
+
+	<div class="sidelist">
+		
+		<div class="title">
+			Banners
+		</div>
+
+		<ul>
+			<li><a href="300x250_waves/300x250_waves.html" target="con" class="active">300x250</a></li>
+			<li><a href="728x90_waves/728x90_waves.html" target="con">728x90</a></li>
+			<li><a href="300x600_waves/300x600_waves.html" target="con">300x600</a></li>
+		</ul>
+
+		<div class="title">
+			Banners US
+		</div>
+
+		<ul>
+			<li><a href="300x250_waves_us/300x250_waves_us.html" target="con">300x250</a></li>
+			<li><a href="728x90_waves_us/728x90_waves_us.html" target="con">728x90</a></li>
+			<li><a href="300x600_waves_us/300x600_waves_us.html" target="con">300x600</a></li>
+		</ul>
+
+		<div class="title">
+			No Hover
+		</div>
+
+		<ul>
+			<li><a href="300x250_waves_nohover/300x250_waves_nohover.html" target="con">300x250</a></li>
+			<li><a href="728x90_waves_nohover/728x90_waves_nohover.html" target="con">728x90</a></li>
+			<li><a href="300x600_waves_nohover/300x600_waves_nohover.html" target="con">300x600</a></li>
+		</ul>
+ 	
+ 		<div class="title">
+			US No Hover
+		</div>
+
+		<ul>
+			<li><a href="300x250_waves_usnohover/300x250_waves_usnohover.html" target="con">300x250</a></li>
+			<li><a href="728x90_waves_usnohover/728x90_waves_usnohover.html" target="con">728x90</a></li>
+			<li><a href="300x600_waves_usnohover/300x600_waves_usnohover.html" target="con">300x600</a></li>
+		</ul>
+
+		 <div class="title">
+			No Symbol
+		</div>
+
+		<ul>
+			<li><a href="300x250_waves_nohover_nosymbol/300x250_waves_nohover_nosymbol.html" target="con">300x250 no hover</a></li>
+			<li><a href="728x90_waves_nohover_nosymbol/728x90_waves_nohover_nosymbol.html" target="con">728x90 no hover</a></li>
+			<li><a href="160x600_waves_nohover_nosymbol/160x600_waves_nohover_nosymbol.html" target="con">160x600 no hover</a></li>
+			<li><a href="300x250_waves_nosymbol/300x250_waves_nosymbol.html" target="con">300x250</a></li>
+			<li><a href="728x90_waves_nosymbol/728x90_waves_nosymbol.html" target="con">728x90</a></li>
+			<li><a href="160x600_waves_nosymbol/160x600_waves_nosymbol.html" target="con">160x600</a></li>
+		</ul>
+ 	
+
+ 		<!-- <div class="title">
+			Animation Test
+		</div>
+
+		<ul>
+		
+			<li><a href="300x250_waves/300x250_waves.html" target="con" >Version A</a></li>
+			<li><a href="300x250_waves_alt/300x250_waves_alt.html" target="con" >Version B</a></li>
+			<li><a href="300x250_waves_alt2/300x250_waves_alt2.html" target="con" >Version C</a></li>
+		</ul> -->
+
+	</div>
+</div>
+
+<div class="content">
+	<iframe name="con" src="300x250_waves/300x250_waves.html" id="con" frameBorder="0"></iframe>
+</div>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".back").on("click", function() {
+        $(".side").toggleClass("hide");
+        $(".content").toggleClass("expand");
+        $(".back").toggleClass("flip");
+    });
+}); 
+</script>
+
+<script type="text/javascript">
+	$('a').click(function(){
+    if ( $('a').hasClass('active') ) {
+        $('a').removeClass('active')
+    } 
+    if ( $(this).hasClass('') ) {
+        $(this).addClass('active')
+    } }) 
+</script>
+
+</body>
+</html>

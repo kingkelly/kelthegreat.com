@@ -1,0 +1,119 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta charset="utf-8" />
+	<title>Evans Hunt - Husky</title>
+	<link rel="stylesheet" href="bananas.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="side">
+	<div class="sidetop">
+		<div class="avatar">
+		</div>
+
+		<div class="client">
+		Evans Hunt
+		</div>
+
+		<div class="date">
+			Husky Summer
+			<!-- <script language="javascript"> 
+			months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+			var theDate = new Date(document.lastModified); 
+			theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+			with (theDate) { 
+			document.write(months[getMonth()]+' '+getDate()) 
+			} 
+			</script>  -->
+		</div>
+
+		<div class="back">
+		<
+		</div>
+	</div>
+
+	<div class="sidelist">
+		
+ 		<!-- <div class="campaign">Longos </div> -->
+ 		<div class="title">
+			Existing Members
+		</div>
+
+		<ul>
+			<li><a href="300x250_Hus_ExA/300x250_Hus_ExA.html" target="con"  class="active" >300x250 A</a></li>
+			<li><a href="300x250_Hus_ExB/300x250_Hus_ExB.html" target="con"  >300x250 B</a></li>
+			<li><a href="300x600_Hus_ExA/300x600_Hus_ExA.html" target="con" >300x600 A</a></li>
+			<li><a href="300x600_Hus_ExB/300x600_Hus_ExB.html" target="con" >300x600 B</a></li>
+			<li><a href="728x90_Hus_ExA/728x90_Hus_ExA.html" target="con" >728x90 A</a></li>
+			<li><a href="728x90_Hus_ExB/728x90_Hus_ExB.html" target="con" >728x90 B</a></li>
+			<li><a href="320x50_Hus_ExA/320x50_Hus_ExA.html" target="con" >320x50 A</a></li>
+			<li><a href="320x50_Hus_ExB/320x50_Hus_ExB.html" target="con" >320x50 B</a></li>
+		</ul>
+
+		<div class="title">
+			Non Existing Members
+		</div>
+
+		<ul>
+			<li><a href="300x250_Hus_NonA/300x250_Hus_NonA.html" target="con">300x250 A</a></li>
+			<li><a href="300x250_Hus_NonB/300x250_Hus_NonB.html" target="con">300x250 B</a></li>
+			<li><a href="300x600_Hus_NonA/300x600_Hus_NonA.html" target="con">300x600 A</a></li>
+			<li><a href="300x600_Hus_NonB/300x600_Hus_NonB.html" target="con">300x600 B</a></li>
+			<li><a href="728x90_Hus_NonA/728x90_Hus_NonA.html" target="con" >728x90 A</a></li>
+			<li><a href="728x90_Hus_NonB/728x90_Hus_NonB.html" target="con" >728x90 B</a></li>
+			<li><a href="320x50_Hus_NonA/320x50_Hus_NonA.html" target="con" >320x50 A</a></li>
+			<li><a href="320x50_Hus_NonB/320x50_Hus_NonB.html" target="con" >320x50 B</a></li>
+		</ul>
+
+		<div class="title">
+			Remarketing
+		</div>
+
+		<ul>
+			<li><a href="300x250_Hus_RemA/300x250_Hus_RemA.html" target="con">300x250 A</a></li>
+			<li><a href="300x600_Hus_RemA/300x600_Hus_RemA.html" target="con">300x600 A</a></li>
+			<li><a href="728x90_Hus_RemA/728x90_Hus_RemA.html" target="con" >728x90 A</a></li>
+			<li><a href="320x50_Hus_RemA/320x50_Hus_RemA.html" target="con" >320x50 A</a></li>
+			<li><a href="300x250_Hus_ExB/300x250_Hus_ExB.html" target="con"  >300x250 B</a></li>
+			<li><a href="300x600_Hus_ExB/300x600_Hus_ExB.html" target="con" >300x600 B</a></li>
+			<li><a href="728x90_Hus_ExB/728x90_Hus_ExB.html" target="con" >728x90 B</a></li>
+			<li><a href="320x50_Hus_ExB/320x50_Hus_ExB.html" target="con" >320x50 B</a></li>
+		</ul>
+
+	</div>
+</div>
+
+<div class="content">
+	<iframe name="con" src="300x250_Hus_ExA/300x250_Hus_ExA.html" id="con" frameBorder="0"></iframe>
+</div>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".back").on("click", function() {
+        $(".side").toggleClass("hide");
+        $(".content").toggleClass("expand");
+        $(".back").toggleClass("flip");
+    });
+}); 
+</script>
+
+<script type="text/javascript">
+	$('a').click(function(){
+    if ( $('a').hasClass('active') ) {
+        $('a').removeClass('active')
+    } 
+    if ( $(this).hasClass('') ) {
+        $(this).addClass('active')
+    } }) 
+</script>
+
+</body>
+</html>

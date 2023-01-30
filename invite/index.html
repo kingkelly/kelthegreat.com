@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kelly & Olya's RSVP</title>
+	<link rel="stylesheet" type="text/css" href="stylo.css"/>
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+   
+   <!-- YOU COMING TO THE WEDDING OR WHAT?! -->
+   
+    <script type="text/javascript">
+    $(function(){
+        $('#form').submit(function(e){
+		
+		 $('#submitaroo').remove();
+		 $('#submitaroo2').show();
+		 $('#submitaroo2').attr("disabled", true);
+		 $('#loading').fadeIn();
+		 $('.rounded').attr('disabled', 'disabled')
+           
+            // Stop the form actually posting
+            e.preventDefault();
+
+            // Send the request
+            $.post('contact.php', {
+                name: $('#name').val(),
+                bacon: $('.bacon:checked').val(),
+                person2: $('#person2').val(),
+                message: $('#message').val(),
+                person3: $('#person3').val(),
+                person4: $('#person4').val(),
+                dinner: $('#dinner').val(),
+                dinner2: $('#dinner2').val(),
+                dinner3: $('#dinner3').val(),
+                dinner4: $('#dinner4').val(),
+            }, function(d){
+                console.log(d);
+					
+				$('#loading').remove();
+                $('#result').html(d);
+                $('#result').slideDown();
+            });
+        });
+    });
+    </script>
+    
+    <script type="text/javascript">
+	
+	$(function radios(){
+    $('#bacon1').click(function() {
+    $("#firstdinner").fadeIn()  
+	});
+	});
+	
+	$(function radios(){
+    $('#bacon2').click(function() {
+    $("#firstdinner").hide()
+    $("#add1").show(); 
+    $("#guest2").hide()
+	$("#guest3").hide()
+    $("#guest4").hide()
+    $("#dinner4").val('');
+    $("#dinner3").val('');
+    $("#dinner2").val('');
+    $("#dinner").val('');
+	});
+	});
+	
+	$(function checkUnchecked(){
+    $('#add1').click(function() {
+    $("#guest2").fadeIn()
+    $("#add1").hide();
+    $("#add2").show();
+	});
+	}); 
+	
+	$(function checkUnchecked(){
+    $('#add2').click(function() {
+    $("#guest3").fadeIn()
+    $("#add2").hide();
+    $("#add3").show();
+    $("#remove2").hide()
+	});
+	}); 
+	
+	$(function checkUnchecked(){
+    $('#add3').click(function() {
+    $("#guest4").fadeIn()
+    $("#add3").hide();
+    $("#add4").show();
+    $("#remove3").hide()
+	});
+	}); 
+	
+	$(function removing(){
+    $('#remove2').click(function() {
+    $("#guest2").hide()
+    $("#person2").val('');
+    $("#dinner2").val('');
+    $("#add1").show();
+	});
+	}); 
+	
+	$(function removing(){
+    $('#remove3').click(function() {
+    $("#guest3").hide()
+    $("#add2").show();
+    $("#person3").val('');
+    $("#dinner3").val('');
+    $("#remove2").show()
+	});
+	}); 
+	
+	$(function removing(){
+    $('#remove4').click(function() {
+    $("#guest4").hide()
+    $("#add3").show();
+    $("#person4").val('');
+    $("#dinner4").val('');
+    $("#remove3").show()
+	});
+	}); 
+	</script>
+    
+<script type="text/javascript">
+      $(document).ready(function start(){
+        $("#balloon,#balloon3,#balloon5").animate({
+          backgroundPositionY: "-150px",
+         }, 17000);
+         $("#balloon,#balloon3,#balloon5").animate({
+          backgroundPositionY: "490px",
+         }, 1, start);
+      });
+      
+      $(document).ready(function start(){
+        $("#balloon2,#balloon4").animate({
+          backgroundPositionY: "-150px",
+         }, 12000);
+         $("#balloon2,#balloon4").animate({
+          backgroundPositionY: "490px",
+         }, 1, start);
+      });
+      
+      $(document).ready(function start(){
+        $("#balloon6,#balloon7").animate({
+          backgroundPositionY: "-150px",
+         }, 9000);
+         $("#balloon6,#balloon7").animate({
+          backgroundPositionY: "490px",
+         }, 1, start);
+      });
+</script>
+
+
+    
+</head>
+<body bgcolor="#B7EBD4">
+	 
+<div id="mountains">
+	
+	<div id="formholder">
+	
+    <form method='post' action='contact.php' id='form'>
+    
+        <input type='text' name='name' required id='name' class='rounded' placeholder="Guest Name"><br>        
+        
+        <div id="rads">
+        <input type='radio' class="bacon" id='bacon1' name='bacon' value='Yep' >
+        <label for="bacon1">Attend</label>
+        <input type='radio' class="bacon" id='bacon2' name='bacon' value='Nope'>
+        <label for="bacon2">Decline</label><br>
+        </div>
+        
+        <textarea name="message" id="message" placeholder="Message"></textarea><br>
+        
+        <div id="firstdinner">
+        <select name='dinner' id='dinner' class='rounded'>
+        <option value='meat'>Beef</option>
+        <option value='chicken'>Chicken</option>
+        <option value='vegetarian'>Vegetarian</option>
+       	</select><br></div>
+       	<div id="add1" class="buttadd">Add Guest</div>
+
+
+        <div id="guest2">
+        <div id="remove2" class="remove">-</div>
+        <input type='text' name='person2' id='person2' class='rounded' placeholder="Guest 2 Name"><br>
+        <select name='dinner2' id='dinner2' class="rounded" >
+        <option value='meat'>Beef</option>
+        <option value='chicken'>Chicken</option>
+        <option value='vegetarian'>Vegetarian</option>
+        </select><br>
+        <div id="add2" class="buttadd">Add Guest</div>
+        </div>
+        
+        <div id="guest3">
+        <div id="remove3" class="remove">-</div>
+        <input type='text' name='person3' id='person3' class='rounded' placeholder="Guest 3 Name"><br>
+        <select name='dinner3' id='dinner3' class="rounded">
+        <option value='meat'>Beef</option>
+        <option value='chicken'>Chicken</option>
+        <option value='vegetarian'>Vegetarian</option>
+        </select><br>
+        <div id="add3" class="buttadd">Add Guest</div>
+        </div>
+        
+        <div id="guest4">
+        <div id="remove4" class="remove">-</div>
+        <input type='text' name='person4' id='person4' class='rounded' placeholder="Guest 4 Name"><br>
+        <select name='dinner4' id='dinner4' class="rounded">
+        <option value='meat'>Beef</option>
+        <option value='chicken'>Chicken</option>
+        <option value='vegetarian'>Vegetarian</option>
+        </select><br>
+        <div id="add3" class="buttadd">Easy There</div>
+        </div>
+		
+		
+        <button name="submit" id="submitaroo" type="submit" class="buttsend">RSVP</button>
+        <button name="done" id="submitaroo2"  class="buttsend2">RSVP</button>
+        
+        <br><br><br><br>
+    </form>
+    
+    <div id="loading"></div>
+    <div id="result"></div>	
+    	
+	</div>
+	
+	<div id="footy"><div id="footmessage">Having trouble? Over 50? <a href="mailto:kelly.olya@gmail.com">Just email us!</a></div></div>
+	
+</div>
+	
+	<div id="air">
+		<div id="airspace">
+			<div id="balloon7"></div>
+			<div id="balloon6"></div>
+			<div id="balloon5"></div>
+			<div id="balloon4"></div>
+			<div id="balloon3"></div>
+			<div id="balloon2"></div>
+			<div id="balloon"></div>
+		</div>
+	</div> 
+	
+	
+</body>
+</html>

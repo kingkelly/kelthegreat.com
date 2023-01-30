@@ -1,0 +1,166 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	transition: .2s all;
+}
+
+a:hover {
+	color: #bababa;
+}
+
+#con {
+	width: 99%;
+	height: 98%;
+}
+
+.back {
+	width: 45px;
+	height: 88px;
+	right: 0px;
+	top: 0px;
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .2s all;
+}
+
+.back:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+
+.flip {
+-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+opacity: .8;
+}
+
+.flip:hover {
+	opacity: 1;
+}
+
+
+.side {
+	background-color: #253039;
+	width: 300px;
+	display: inline-block;
+	float: left;
+	height: 100vh;
+	position: relative;
+	transition: .5s all;
+	left: 0;
+	overflow: auto;
+}
+
+.content {
+	width: calc(100% - 300px);
+	height: 100vh;
+	float: left;
+}
+
+.sidetop {
+	padding: 20px 45px;
+	background-color: #161f21;
+
+}
+
+.sidelist {
+	padding: 25px 45px;
+}
+
+.title {
+	font-size: 20px;
+	border-bottom: 1px solid #424242;
+	color: #5bbc9e;
+	padding-bottom: 4px;
+	text-transform: uppercase;
+}
+
+.campaign {
+	font-size: 26px;
+	color: #6b6b6b;
+	padding-bottom: 12px;
+}
+
+.avatar {
+	background-image: url(logo.png);
+	background-position:center;
+	height: 50px;
+	background-color: white;
+	width: 50px;
+	border-radius: 25px;
+	background-size: cover;
+	display: inline-block;
+	float: left;
+}
+
+.client {
+	color: #ffffff;
+	font-size: 20px;
+	margin-left: 70px;
+}
+
+.date {
+	color: #838d8e;
+	font-size: 14px;
+	margin-left: 70px;
+	line-height: 16px;
+}
+
+.hide {
+	left: -255px;
+	transition: .5s all;
+}
+.expand {
+	width: calc(100% - 40px);
+	position: absolute;
+	z-index: -1;
+	left: 40px;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 22px 0px;
+    color: white;
+    font-size: 15px;
+}
+
+.active {
+	background-color: #161f21;
+	border-radius: 14px;
+	padding: 0px 12px;
+	color: #5bbc9e;
+}
+
+.active:hover {
+	color: #5bbc9e;
+}
+
+/*li a:focus{
+	background-color: #5bbc9e;
+	border-radius: 14px;
+	padding: 0px 12px;
+	color: #212121;
+}
+*/
+
+
+

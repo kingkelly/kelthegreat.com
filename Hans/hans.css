@@ -1,0 +1,945 @@
+body {
+	margin: 0px;
+	font-family: 'BioRhyme', serif;
+	font-weight: 400;
+	color: white;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+}
+
+
+a {
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+text-decoration: none;
+}
+
+a.buttlink{
+	text-decoration: none;
+}
+
+a.social :hover {
+	opacity: 0.6;
+	transition: .3s all;
+}
+
+.stick {
+	position:fixed;
+	top:0px;
+	padding-left: 0px;
+}
+
+.unstick {
+	padding-top: 440px;
+}
+
+
+
+.stickbottom {
+	align-self: flex-end;
+}
+
+.hold {
+	width: 100%;
+	/*max-width: 1700px;*/
+	text-align: center;
+
+}
+
+.full {
+	max-width: 1200px;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+}
+
+.half {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	
+	float: left;
+}
+
+.halfleft {
+	width: 100%;
+	max-width: 600px;
+	float: right;
+
+}
+
+.halfright {
+	width: 100%;
+	max-width: 600px;
+	float: left;
+}
+
+.goodkidneyholder {
+
+	width: 227px;
+	position: absolute;
+	display: flex;
+	height: 700px;
+	align-items: flex-end;
+}
+
+.goodkidney {
+	width: 227px;
+	height: 409px;
+	background-image: url(sprite/goodkidney.png);
+    -webkit-animation: goodkid .8s steps(4) infinite;
+       -moz-animation: goodkid .8s steps(4) infinite;
+        -ms-animation: goodkid .8s steps(4) infinite;
+         -o-animation: goodkid .8s steps(4) infinite;
+            animation: goodkid .8s steps(4) infinite;
+}
+
+@keyframes goodkid {
+   from { background-position:    0px }
+     to { background-position:    -908px; }
+}
+
+.badkidney {
+	width: 227px;
+	height: 440px;
+	background-image: url(sprite/badkidney.png);
+    -webkit-animation: badkid .5s steps(3) infinite;
+       -moz-animation: badkid .5s steps(3) infinite;
+        -ms-animation: badkid .5s steps(3) infinite;
+         -o-animation: badkid .5s steps(3) infinite;
+            animation: badkid .5s steps(3) infinite;
+}
+
+@keyframes badkid {
+   from { background-position:    0px }
+     to { background-position:    -681px; }
+}
+
+
+
+.watermelon {
+	background: url(watermelon.jpg) no-repeat center; 
+	background-size: 100% 100%;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex; /* equal height of the children */
+}
+
+
+.introtitle {
+	font-family: 'Ultra';
+	font-size: 45px;
+	line-height: 50px;
+	padding-top: 125px;
+}
+
+.introsubtitle {
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 15px;
+}
+
+.introimageholder {
+height: 568px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.introimage {
+	height: 578px;
+	width: 702px;
+	margin-bottom: -80px;
+	z-index: 100;
+}
+
+.hanshappy {
+	background-image: url(sprite/hanshappy.png);
+	width: 100%;
+	height: 100%;
+    -webkit-animation: happy .8s steps(4) infinite;
+       -moz-animation: happy .8s steps(4) infinite;
+        -ms-animation: happy .8s steps(4) infinite;
+         -o-animation: happy .8s steps(4) infinite;
+            animation: happy .8s steps(4) infinite;
+}
+
+@keyframes happy {
+   from { background-position:    0px }
+     to { background-position:    -2808px; }
+}
+
+.hanspissed {
+	background-image: url(sprite/hanspissed.png);
+	width: 100%;
+	height: 100%;
+    -webkit-animation: pissed 1s steps(8) infinite;
+       -moz-animation: pissed 1s steps(8) infinite;
+        -ms-animation: pissed 1s steps(8) infinite;
+         -o-animation: pissed 1s steps(8) infinite;
+            animation: pissed 1s steps(8) infinite;
+}
+
+@keyframes pissed {
+   from { background-position:    0px }
+     to { background-position:    -5615px; }
+}
+
+.intro {
+	background: url(confetti.png) #feb71b repeat-x bottom;
+}
+
+
+
+.who {
+	float: right;
+	max-width: 600px;
+	margin: 80px 95px 115px 30px;
+	text-align: left;
+	font-size: 80px;
+	font-family: 'ultra';
+	line-height: 62px;
+}
+
+.who2 {
+	float: right;
+	max-width: 600px;
+	margin: 80px 95px 115px 30px;
+	text-align: left;
+	font-size: 40px;
+	font-family: 'ultra';
+	line-height: 62px;
+}
+
+.gallery {
+	float: left;
+	max-width: calc(100% - 230px);
+	margin-left: 120px;
+}
+
+.caption {
+	font-size: 13px;
+	width: 75%;
+	margin-left: 14%;
+	margin-top: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.smalltext {
+	font-size: 20px;
+	font-family: 'BioRhyme';
+	line-height: 32px;
+    margin-top: 35px;
+}
+
+.tinytext {
+	font-size: 14px;
+	font-family: 'BioRhyme';
+	line-height: 27px;
+    margin-top: 35px;
+    color: black;
+}
+
+.bullets {
+	font-size: 14px;
+	font-family: 'BioRhyme';
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.help {
+	margin-left: 250px;
+	margin-top: 125px;
+	margin-right: 20px;
+}
+
+.helptitle {
+	font-size: 60px;
+	font-family: 'Ultra';
+	line-height: 60px;
+}
+
+.smalltext2 {
+	font-size: 16px;
+	font-family: 'BioRhyme';
+	line-height: 25px;
+    margin-top: 35px;
+    color: black;
+}
+
+.callnurse {
+	font-size: 24px;
+	font-family: 'BioRhyme';
+	line-height: 30px;
+    margin-top: 45px;
+    color: black;
+}
+
+.tinytext2 {
+	font-size: 14px;
+	font-family: 'BioRhyme';
+	line-height: 27px;
+    margin-top: 35px;
+}
+
+.additional {
+	padding-top: 90px;
+	margin: 0 auto;
+}
+
+.butt {
+	color: white;
+	font-size: 20px;
+	background-color: #00784c;
+	border-radius: 40px;
+    padding: 16px;
+    margin-top: 30px;
+    transition: .2s all;
+}
+
+.butt:hover {
+	background-color: #330099;
+	transition: .6s all;
+}
+
+.phone {
+	color:#00784c;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.share {
+	text-align: left;
+	font-family: 'Ultra';
+	font-size: 40px;
+	padding: 40px 0px 40px 25px;
+}
+
+.contact {
+	text-align: center;
+	font-family: 'Ultra';
+	font-size: 40px;
+	color: #00784c;
+	padding: 40px 40px 40px 0px;
+	display: inline-block;
+}
+
+.email {
+	font-size: 30px;
+	color: #330099;
+	display: inline-block;
+}
+
+.copyright {
+	font-size: 12px;
+	font-weight: 700;
+	padding: 50px 0px 100px 25px;
+	text-align: left;
+}
+
+.switchhold {
+	background-color: #feb71b;
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	z-index: 10000;
+	/*transition: .5s;*/
+}
+
+.switchholdhold{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.switchdesc {
+
+line-height: 18px;
+padding-left: 20px;
+padding-right: 10px;
+}
+
+.switchonoff {
+	padding-left: 10px;
+	
+}
+
+.shareicons {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+
+
+.purple {
+	color: #330099;
+}
+
+.purplebg {
+	background: url(swigleft.png) #330099 no-repeat bottom right;
+	background-size: auto 100%;
+}
+
+.yellowbg {
+	background: url(swigright.png) #feb71b no-repeat bottom left;
+	background-size: auto 100%;
+}
+
+
+.yellow {
+	color: #feb71b;
+}
+
+.pink {
+	color: #f6705a;
+}
+
+.grey {
+	background-color: #e0eaef;
+}
+
+.pinkbg {
+	background-color: #f6705a;
+}
+
+.black {
+	color: black;
+}
+
+.green {
+	color: #00784c;
+}
+
+.red {
+	color: #e50026;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+
+/*Dark Modes*/
+
+
+.fil .show {
+	display: none;
+}
+
+.fil .hide {
+	display: block; 
+}
+
+
+.bodystyle {
+	margin: 0px;
+	font-family: 'Open Sans' !important;
+	font-weight: 400;
+	color: white;
+}
+
+.fil .switchhold {
+	background-color: #000;
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px;
+	z-index: 10000;
+	/*transition: .5s ;*/
+}
+
+.fil .intro {
+	background: url(scribble.png) #000 bottom center no-repeat;
+
+}
+
+.fil .who {
+	float: right;
+	max-width: 600px;
+	margin: 80px 95px 115px 30px;
+	text-align: left;
+	font-weight: 700;
+	font-size: 110px;
+	font-family: 'Amatic SC';
+	line-height: 90px;
+}
+
+.fil .tinytext {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 27px;
+    margin-top: 35px;
+    color: black;
+}
+
+.fil .watermelon {
+	background: url(redmelon.jpg) no-repeat center; 
+	background-size: 100% 100%;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.fil .bullets {
+	font-size: 14px;
+	font-family: 'Open Sans';
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 50px;
+	margin-top: 15px;
+}
+
+.fil .purplebg {
+	background: url(swigleftD.png) #740013 no-repeat bottom right;
+	background-size: auto 100%;
+}
+
+.fil .yellowbg {
+	background: url(swigrightD.png) #cccccc no-repeat bottom left;
+	background-size: auto 100%;
+}
+
+.fil .helptitle {
+	font-size: 100px;
+	font-family: 'Amatic SC';
+	line-height: 80px;
+	color: black;
+	font-weight: 700;
+}
+
+.fil .black {
+	color: #b00320;
+}
+
+.fil .callnurse {
+	font-size: 24px;
+	font-family: 'Open Sans';
+	line-height: 30px;
+    padding-top: 45px;
+    color: black;
+    margin: 0 auto;
+    max-width: 260px;
+}
+
+.fil .green {
+	color: #b00320;
+}
+
+.fil .phone {
+	color:#b00320;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.fil .additional {
+	padding-top: 90px;
+	margin: 0 auto;
+	color: black;
+	line-height: 30px;
+}
+
+.fil .pinkbg {
+	background-color: #e50026;
+}
+
+.fil .grey {
+	background-color: #b00320;
+}
+
+.fil .contact {
+	text-align: center;
+	font-family: 'Amatic SC';
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+	padding: 40px 40px 40px 0px;
+	display: inline-block;
+}
+
+.fil .email {
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+}
+
+.fil .purple {
+	color: black;
+}
+
+.fil  .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 3px solid #e50026;
+        border-radius: 60px;
+        transition: .3s all;
+}
+
+.fil .stick {
+	padding-left: 60px;
+}
+
+.fil .unstick {
+	padding-top: 470px;
+
+}
+
+
+
+/*Dark Replacements*/
+.introtitleD {
+	font-family: 'Amatic SC';
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 74px;
+	padding-top: 125px;
+}
+
+.introsubtitleD {
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 15px;
+}
+
+.who2D {
+	float: right;
+	max-width: 600px;
+	margin: 80px 95px 115px 30px;
+	text-align: left;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: 'Amatic SC';
+	line-height: 62px;
+}
+
+.shareD {
+	text-align: left;
+	font-family: 'Amatic SC';
+	font-size: 60px;
+	font-weight: 700;
+	padding: 40px 0px 40px 25px;
+}
+
+
+
+/*Toggle shit*/
+
+
+  .onoffswitch {
+        position: relative;
+        margin: 0 auto;
+        width: 220px;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+
+        
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 3px solid white;
+        border-radius: 60px;
+        transition: .3s all;
+    }
+
+        .onoffswitch-label:hover .onoffswitch-inner:after, .onoffswitch-label:hover .onoffswitch-inner:before{
+        color: white;
+    }
+
+    .onoffswitch-inner {
+        display: block;
+            margin-left: -108%;
+        width: 200%;
+        margin-left: -106%;
+        -moz-transition: margin 0.3s ease-in 0s;
+        -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 30px;
+        position: relative;
+        left: 10px;
+        line-height: 8px;
+        font-size: 19px;
+        font-weight: 800;
+        color: white;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:after {
+        content:"FILTER ON";
+        padding-right: 15px;
+        text-align: right;
+        color: #000000;
+    }
+    .onoffswitch-inner:before {
+        content:"FILTER OFF";
+        padding-left: 24px;
+        color: #e50026;
+        
+    }
+    .onoffswitch-switch {
+        display: block;
+        width: 51px;
+        margin: 8px;
+        background: #ffffff;
+        border-radius: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 151px;
+        -moz-transition: all 0.3s ease-in 0s;
+        -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s;
+        transition: all 0.3s ease-in 0s;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0;
+        background-color: #e50026;
+    }
+
+
+
+
+
+
+
+@media all and (max-width:850px)
+
+{
+    .half, .row {
+        display: block; 
+        width: 100%;
+    }
+
+    .halfright {
+    	max-width: 800px;
+    }
+
+.help {
+	margin-left: 20px !important;
+	margin-top: 125px !important;
+	margin-right: 20px !important;
+}
+
+.gallery {
+	padding: 50px 0px 50px 0px;
+}
+
+.introtitle {
+	font-size: 40px !important;
+    line-height: 40px !important;
+}
+
+.introtitleD {
+	font-size: 50px;
+	line-height: 50px;
+	padding-top: 125px;
+}
+
+.introsubtitleD {
+padding-bottom: 130px;c
+}
+
+.hold {
+	padding-top: 40px;
+}
+
+.who {
+	margin: 80px 20px 115px 20px !important;
+	float: none !important;
+	font-size: 70px;
+	line-height: 55px;
+}
+
+.switchholdhold{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.switchdesc {
+	padding-top: 10px;
+}
+
+.purplebg {
+	background: url() #330099 no-repeat bottom right;
+	
+}
+
+.yellowbg {
+	background: url() #feb71b no-repeat bottom left;
+}
+
+.fil .yellowbg {
+	background: url() #ccc no-repeat;
+}
+
+.fil .purplebg {
+	background: url() #740013;
+}
+
+
+.grey {
+	padding-bottom: 50px;
+}
+
+.email {
+	padding-right: 0px !important;
+}
+
+.phone {
+	padding-bottom: 70px;
+}
+
+.introimage {
+	height: 259px;
+	width: 315px;
+	margin-bottom: -40px;
+	z-index: 100;
+}
+
+.hanshappy {
+	background-image: url(sprite/hanshappy.png);
+	background-size: 1260px 259px;
+	width: 100%;
+	height: 100%;
+    -webkit-animation: happy .8s steps(4) infinite;
+       -moz-animation: happy .8s steps(4) infinite;
+        -ms-animation: happy .8s steps(4) infinite;
+         -o-animation: happy .8s steps(4) infinite;
+            animation: happy .8s steps(4) infinite;
+}
+
+@keyframes happy {
+   from { background-position:    0px }
+     to { background-position:    -1260px; }
+}
+
+.hanspissed {
+	background-image: url(sprite/hanspissed.png);
+	background-size: 2520px 259px;
+	width: 100%;
+	height: 100%;
+    -webkit-animation: pissed 1s steps(8) infinite;
+       -moz-animation: pissed 1s steps(8) infinite;
+        -ms-animation: pissed 1s steps(8) infinite;
+         -o-animation: pissed 1s steps(8) infinite;
+            animation: pissed 1s steps(8) infinite;
+}
+
+@keyframes pissed {
+   from { background-position:    0px }
+     to { background-position:    -2520px; }
+}
+
+
+
+.introimageholder {
+height: 268px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.who2 {
+	line-height: 42px;
+}
+
+.badkidney, .goodkidney {
+	display: none;
+	visibility: hidden;
+}
+
+.bullets {
+	margin-top: 20px;
+}
+
+.additional {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+}
+
+.share, .shareD{
+	text-align: center;
+	padding: 40px 0px 50px 0px;
+}
+
+.shareicons {
+	display: block;
+	margin-left: 0px;
+}
+
+.contact, .fil .contact {
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+	display: block;
+}
+
+.fil .email {
+	display: block;
+}
+
+.halfleft {
+	float: none;
+	margin: 0 auto;
+}
+
+.stick {
+	position:static;
+	top:0px;
+	padding-left: 0px;
+}
+
+.unstick {
+	padding-top: 0px;
+}
+
+
+
+
+
+
+}

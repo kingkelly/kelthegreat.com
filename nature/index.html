@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nature Center Mockups</title>
+
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+    	text-align: center;
+}
+
+.holder {
+	width: 100%;
+	max-width: 1350px;
+} 
+</style>
+
+</head>
+<body>
+
+<div class="">
+	<img src="home.jpg" class="holder" id="imgClickAndChange" onclick="changeImage()" usemap="#SUB15" />
+</div>
+
+<script>
+var counter = 1;
+
+imgClickAndChange.onclick = function(){
+    if(counter == 0){
+        document.getElementById("imgClickAndChange").src = "home.jpg";
+        counter++;
+    }
+    else if(counter == 1){
+        document.getElementById("imgClickAndChange").src = "home2.jpg";
+        counter++;
+    }
+    else if(counter == 2){
+        document.getElementById("imgClickAndChange").src = "donate.jpg";
+        counter++;
+    }
+        else if(counter == 3){
+        document.getElementById("imgClickAndChange").src = "blog.jpg";
+        counter++;
+    }
+            else if(counter == 4){
+        document.getElementById("imgClickAndChange").src = "inside.jpg";
+        counter++;
+    }
+                else if(counter == 5){
+        document.getElementById("imgClickAndChange").src = "wire.jpg";
+        counter = 0;
+    }
+};
+</script>
+</body>
+</html>

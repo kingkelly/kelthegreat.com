@@ -1,0 +1,118 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta charset="utf-8" />
+	<title>Evans Hunt - Husky Spring Awareness</title>
+	<link rel="stylesheet" href="bananas.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="side">
+	<div class="sidetop">
+		<div class="avatar">
+		</div>
+
+		<div class="client">
+		Evans Hunt
+		</div>
+
+		<div class="date">
+			Husky Spring
+			<!-- <script language="javascript"> 
+			months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+			var theDate = new Date(document.lastModified); 
+			theDate.setTime((theDate.getTime()+(5000*60*60)) ) 
+			with (theDate) { 
+			document.write(months[getMonth()]+' '+getDate()) 
+			} 
+			</script>  -->
+		</div>
+
+		<div class="back">
+		<
+		</div>
+	</div>
+
+	<div class="sidelist">
+		
+ 		<!-- <div class="campaign">Longos </div> -->
+ 		<div class="title">
+			Pump
+		</div>
+
+		<ul>
+			<li><a href="pump_300x600/pump_300x600.html" target="con"  class="active" >300x600</a></li>
+			<li><a href="pump_300x250/pump_300x250.html" target="con" >300x250</a></li>
+			<li><a href="pump_728x90/pump_728x90.html" target="con" >728x90</a></li>
+			<li><a href="pump_320x480/pump_320x480.html" target="con" >320x480</a></li>
+		</ul>
+
+		<div class="title">
+			Clean
+		</div>
+
+		<ul>
+			<li><a href="clean_300x600/clean_300x600.html" target="con" >300x600</a></li>
+			<li><a href="clean_300x250/clean_300x250.html" target="con" >300x250</a></li>
+			<li><a href="clean_728x90/clean_728x90.html" target="con" >728x90</a></li>
+			<li><a href="clean_320x480/clean_320x480.html" target="con" >320x480</a></li>
+		</ul>
+
+		<div class="title">
+			Seize
+		</div>
+
+		<ul>
+			<li><a href="seize_300x600/seize_300x600.html" target="con" >300x600</a></li>
+			<li><a href="seize_300x250/seize_300x250.html" target="con" >300x250</a></li>
+			<li><a href="seize_728x90/seize_728x90.html" target="con" >728x90</a></li>
+			<li><a href="seize_320x480/seize_320x480.html" target="con" >320x480</a></li>
+
+		</ul>
+
+		<div class="title">
+			Sip
+		</div>
+
+		<ul>
+			<li><a href="sip_300x600/sip_300x600.html" target="con" >300x600</a></li>
+			<li><a href="sip_300x250/sip_300x250.html" target="con" >300x250</a></li>
+			<li><a href="sip_728x90/sip_728x90.html" target="con" >728x90</a></li>
+			<li><a href="sip_320x480/sip_320x480.html" target="con" >320x480</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="content">
+	<iframe name="con" src="pump_300x600/pump_300x600.html" id="con" frameBorder="0"></iframe>
+</div>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".back").on("click", function() {
+        $(".side").toggleClass("hide");
+        $(".content").toggleClass("expand");
+        $(".back").toggleClass("flip");
+    });
+}); 
+</script>
+
+<script type="text/javascript">
+	$('a').click(function(){
+    if ( $('a').hasClass('active') ) {
+        $('a').removeClass('active')
+    } 
+    if ( $(this).hasClass('') ) {
+        $(this).addClass('active')
+    } }) 
+</script>
+
+</body>
+</html>
